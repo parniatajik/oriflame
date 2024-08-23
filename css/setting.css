@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: sans;
+    src: url('../fonts/OriflameSans20-Regular.eot');
+    src: url('../fonts/OriflameSans20-Regular.ttf');
+    src: url('../fonts/OriflameSans20-Regular.woff');
+    src: url('../fonts/sans-regular.woff2');
+}
+div.wrapper{
+    width: 100%;
+}
+/* scroller: */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #a7a6a6; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777676; 
+  }

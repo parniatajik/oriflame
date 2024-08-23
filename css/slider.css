@@ -1,0 +1,93 @@
+div.slider{
+    width: 100%;
+    height: 500px;
+    margin-top: 1px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide>div.content , .swiper-slide>div.content2{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 140px;
+    bottom: 40px;
+  }
+  .swiper-slide>div.content>p {
+    font-size: 20px;
+    font-family: sans;
+    color: whitesmoke;
+    margin-bottom: 25px;
+  }
+  .swiper-slide>div.content>h1{
+    font-size: 50px;
+    font-family: sans;
+    color: whitesmoke;
+    margin-bottom: 25px;
+  }
+  .swiper-slide>div.content2>p{
+    font-size: 20px;
+    font-family: sans;
+    color: black;
+    margin-bottom: 25px;
+  }
+  .swiper-slide>div.content2>h1{
+    font-size: 50px;
+    font-family: sans;
+    color: black;
+    margin-bottom: 25px;
+  }
+
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 0;
+  }
+
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke:black;
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
